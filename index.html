@@ -6,7 +6,7 @@
   <link rel="icon" type="image/svg+xml" href="/RAOS/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Raos</title>
-  <script src="https://api-maps.yandex.ru/v3/?apikey=bc775698-37d5-4d2b-94fc-c4cf1052fb36&amp;lang=ru_RU"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=bc775698-37d5-4d2b-94fc-c4cf1052fb36&lang=ru_RU" type="text/javascript"></script>
   <script type="module" crossorigin src="/RAOS/assets/index-CMDDIs4E.js"></script>
   <link rel="stylesheet" crossorigin href="/RAOS/assets/index-6RbscyYM.css">
 </head>
@@ -387,9 +387,16 @@
     </footer>
   </div>
   <script type="text/javascript">
-    // Функция ymaps.ready() будет вызвана, когда
-    // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
-    ymaps.ready(init);
+    // Инициализация карты после полной загрузки API
+    document.addEventListener('DOMContentLoaded', function() {
+      // Проверяем, загружен ли API Яндекс Карт
+      if (typeof ymaps !== 'undefined') {
+        ymaps.ready(init);
+      } else {
+        console.error('Yandex Maps API не загружен');
+      }
+    });
+    
     function init(){
         // Создание карты.
         var myMap = new ymaps.Map("map", {
