@@ -1,0 +1,667 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/RAOS/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raos</title>
+  <script src="https://api-maps.yandex.ru/v3/?apikey=bc775698-37d5-4d2b-94fc-c4cf1052fb36&amp;lang=ru_RU"></script>
+  <script type="module" crossorigin src="/RAOS/assets/index-CMDDIs4E.js"></script>
+  <link rel="stylesheet" crossorigin href="/RAOS/assets/index-6RbscyYM.css">
+</head>
+
+<body>
+  <div class="SO_Page">
+    <div class="O_BurgerMenu">
+      <div class="W_BurgerMenuList">
+        <div class="W_BurgerLinksAndClose">
+          <div class="W_CloseBurgerOrder"> <a class="A_NavbarItemBurger U_LinkToOffer" href="#RAOS_contacts">
+              <div Style="color: #0f3855 !important; text-transform: uppercase; font-weight: 500;">Оставить заявку</div>
+              <div class="Q_UnderlineBurger"></div>
+            </a>
+            <div class="A_BurgerCloseButton"> <img class="Q_Cross"
+                src="https://optim.tildacdn.com/tild3832-3232-4461-a536-646564333339/-/resize/288x/-/format/webp/cross.png"
+                alt=""> </div>
+          </div>
+          <div class="W_NavbarItemsBurger"> <a class="A_NavbarItemBurgerLink U_LinkToOffer"
+              href="#RAOS_map">Расположение</a> <a class="A_NavbarItemBurgerLink U_LinkToOffer"
+              href="#RAOS_features">Характеристики</a> <a class="A_NavbarItemBurgerLink U_LinkToOffer"
+              href="#RAOS_table">Доступные площади</a> </div>
+        </div>
+        <div class="W_NavbarLinksBurger">
+          <div class="W_BurgerPhone">
+            <div class="A_NavbarPhoneDescription">Запросить материалы:</div>
+            <a href="tel:+74954920610" class="A_NavbarPhone" onclick="_txq.push(['track', 'call_number']);">+7 495 492 06 10</a>
+            <br>
+            <a href="mailto:raos@raos-prom.ru" class="A_NavbarPhone" onclick="_txq.push(['track', 'call_number']);">raos@raos-prom.ru</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="O_Nav">
+      <img class="A_NavLogo"
+        src="https://optim.tildacdn.com/tild6633-3063-4530-b063-663534353565/-/format/webp/RAOS_logo.png" alt="">
+      <div class="C_NavLinks">
+        <a class="W_NavPhoneMobileWrapper" href="tel:+74956599033">
+          <img class="A_NavPhoneMobile"
+            src="https://optim.tildacdn.com/tild6234-3431-4233-b464-666537396239/-/resize/944x/-/format/webp/phoneIcon.png"
+            alt="">
+        </a>
+        <a class="A_NavLink" href="mailto:raos@raos-prom.ru">raos@raos-prom.ru</a>
+        <a class="A_NavLink" href="tel:+74956599033">+7 495 659 90 33</a>
+        <a class="A_NavLink U_Underline" href="#RAOS_contacts">Оставить заявку</a>
+        <div class="A_NavbarItem">
+          <div class="A_BurgerMenuButton">
+            <div class="Q_Line"></div>
+            <div class="Q_Line"></div>
+          </div>
+        </div>  
+      </div>
+    </nav>
+    <section class="O_Header">
+      <div class="W_HeaderTitle">
+        <h1 class="A_HeaderTitle">Купить помещения для малого и среднего бизнеса в промышленном парке РАОС</h1>
+        <a class="A_HeaderButton" href="#RAOS_table">Выбрать помещение</a>
+      </div>
+      <img class="A_HeaderImage"
+        src="https://optim.tildacdn.com/tild6332-6437-4833-a165-633639313465/-/format/webp/Frame_1228.jpg" alt="">
+    </section>
+    <section class="O_Halfs U_Color" id="RAOS_map">
+      <div class="W_LeftHalf U_Map">
+        <h2 class="A_BigTitle">Высокая<br>транспортная<br>доступность</h2>
+        <div class="W_PointsDescription">
+          <p>Московская область, Раменский муниципальный округ,<br>территориальное управление Софьинское</p>
+          <div class="W_Points">
+            <div class="A_Point">
+              290 м — остановка общественного транспорта
+            </div>
+            <div class="A_Point">
+              20 мин. на транспорте до м. Котельники
+            </div>
+            <div class="A_Point">
+              20 мин. на транспорте до МЦД-3 Отдых
+            </div>
+            <div class="A_Point">
+              27 км до МКАД
+            </div>
+          </div>
+          <a class="A_MapButton" href="">Построить маршрут</a>
+        </div>
+      </div>
+      <div id="map" class="W_RightHalf">
+      </div>
+    </section>
+    <section class="W_ImageContainer">
+      <h2 class="A_BigTitle">Промышленный парк РАОС</h2>
+      <img src="https://optim.tildacdn.com/tild6431-3062-4565-a532-326233336535/-/format/webp/RAOS_map_location_bi.jpg"
+        alt="">
+    </section>
+    <section class="O_Halfs" id="RAOS_features">
+      <div class="W_LeftHalf">
+        <p class="A_SmallTitle">Больше о проекте</p>
+        <p class="A_MediumText">Современный промышленный парк на юго-восточном направлении Московской области<br><br>
+        </p>
+        <p class="A_SmallText">РАОС - промышленный парк формата light industrial, предназначенный для размещения легких
+          производств, хранения и логистики.<br><br>Универсальный тип помещений позволяет использовать их
+          многофункционально: под производство, склад, офис и шоу-рум.<br><br>Расположение парка обеспечивает высокую
+          транспортную доступность для комфортной логистики сотрудников на объект.</p>
+      </div>
+      <div class="Q_Divider"></div>
+      <div class="W_RightHalf">
+        <img class="A_HalfPhoto"
+          src="https://optim.tildacdn.com/tild3036-3864-4737-b964-326536323530/-/format/webp/Frame_1110.jpg" alt="">
+      </div>
+    </section>
+    <h2 class="A_BigTitle U_Left">Характеристики объекта</h2>
+    <section class="O_Halfs">
+      <div class="W_LeftHalf U_Points">
+        <div class="W_Points U_Colored">
+          <div class="A_Point">
+            <p>Класс</p>
+            <p>А</p>
+          </div>
+          <div class="A_Point">
+            <p>Статус</p>
+            <p>Строящийся объект</p>
+          </div>
+          <div class="A_Point">
+            <p>Готовность 1 очереди</p>
+            <p>2027</p>
+          </div>
+          <div class="A_Point">
+            <p>Этажность</p>
+            <p>1</p>
+          </div>
+          <div class="A_Point">
+            <p>Нагрузка на пол</p>
+            <p>5 т/м</p>
+          </div>
+          <div class="A_Point">
+            <p>Наличие управляющей компании</p>
+            <p>Да</p>
+          </div>
+        </div>
+      </div>
+      <div class="Q_Divider"></div>
+      <div class="W_RightHalf">
+        <div class="W_Points U_Colored">
+          <div class="A_Point">
+            <p>Рабочая высота (расстояние от пола до ферм)</p>
+            <p>8 м</p>
+          </div>
+          <div class="A_Point">
+            <p>Шаг колонн</p>
+            <p>12x24 м</p>
+          </div>
+          <div class="A_Point">
+            <p>Электричество</p>
+            <p>Да</p>
+          </div>
+          <div class="A_Point">
+            <p>Коммуникации</p>
+            <p>Центральные</p>
+          </div>
+          <div class="A_Point">
+            <p>Спринклерная система пожаротушения</p>
+            <p>Да</p>
+          </div>
+          <div class="A_Point">
+            <p>Офис с отделкой</p>
+            <p>Да</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="O_Halfs U_Color">
+      <div class="W_LeftHalf">
+        <h2 class="A_MediumTitle">Получите подробную презентацию о промышленном парке РАОС</h2>
+      </div>
+      <div class="W_RightHalf">
+        <div class="M_Form">
+          <div class="W_FormInputs">
+            <input class="A_FormInput" type="text" placeholder="Email">
+            <div class="W_CheckboxLink">
+              <div class="A_Checkbox"></div>
+              <p style="color: #9CA8AE !important" class="A_TextWithLink">Соглашаюсь на обработку <a
+                  style="color: #fff !important" target="_blank"
+                  href="https://parametr.space/privacy-policy">персональных данных</a></p>
+            </div>
+          </div>
+          <div class="A_Button">
+            Отправить
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="O_Halfs" id="RAOS_table">
+      <div class="W_LeftHalf">
+        <h2 class="A_MediumTitle">Узнайте больше о помещениях, их оснащении и условиях покупки
+        </h2>
+        <div class="A_Button">
+          Узнать подробности
+        </div>
+      </div>
+      <div class="W_RightHalf">
+        <p class="A_TableTitle">
+          Минимальный доступный блок — 1 162 м².<br>
+          Площадь можно увеличить с шагом колонн здания.
+          <br><br>Каждый блок имеет:
+        </p>
+        <div class="C_SmallPoints">
+          <p>— индивидуальный вход;</p>
+          <p>— двухуровневый офис с отделкой;</p>
+          <p>— выделенные парковки для грузового и легкового транспорта;</p>
+          <p>— доки или ворота;</p>
+          <p>— другое функциональное оснащение.</p>
+        </div>
+      </div>
+    </section>
+    <section class="O_Table">
+      <div class="W_TableRow">
+        <p class="A_TableText U_First U_Name">Здание</p>
+        <p class="A_TableText U_Second U_Name">Площадь помещения</p>
+        <p class="A_TableText U_Third U_Name">док | ворота</p>
+        <p class="A_TableText U_Fourth U_Name">Парковка для транспорта легкового | грузового</p>
+        <p class="A_TableText U_Fifth U_Name">Дата готовности</p>
+        <p class="A_TableText U_Sixth U_Name">Стоимость</p>
+      </div>
+      <div class="W_TableRow">
+        <p class="A_TableText U_First">1</p>
+        <p class="A_TableText U_Second">579м²</p>
+        <p class="A_TableText U_Third">1 | 0</p>
+        <p class="A_TableText U_Fourth">1 | 0</p>
+        <p class="A_TableText U_Fifth">III кв 2026 г.</p>
+        <p class="A_TableText U_Sixth">81 013 680 ₽</p>
+      </div>
+      <div class="W_TableRow">
+        <p class="A_TableText U_First">1</p>
+        <p class="A_TableText U_Second">579м²</p>
+        <p class="A_TableText U_Third">1 | 0</p>
+        <p class="A_TableText U_Fourth">1 | 0</p>
+        <p class="A_TableText U_Fifth">III кв 2026 г.</p>
+        <p class="A_TableText U_Sixth">81 013 680 ₽</p>
+      </div>
+      <div class="W_TableRow">
+        <p class="A_TableText U_First">1</p>
+        <p class="A_TableText U_Second">579м²</p>
+        <p class="A_TableText U_Third">1 | 0</p>
+        <p class="A_TableText U_Fourth">1 | 0</p>
+        <p class="A_TableText U_Fifth">III кв 2026 г.</p>
+        <p class="A_TableText U_Sixth">81 013 680 ₽</p>
+      </div>
+      <div class="W_TableRow">
+        <p class="A_TableText U_First">1</p>
+        <p class="A_TableText U_Second">579м²</p>
+        <p class="A_TableText U_Third">1 | 0</p>
+        <p class="A_TableText U_Fourth">1 | 0</p>
+        <p class="A_TableText U_Fifth">III кв 2026 г.</p>
+        <p class="A_TableText U_Sixth">81 013 680 ₽</p>
+      </div>
+      <div class="W_TableRow">
+        <p class="A_TableText U_First">1</p>
+        <p class="A_TableText U_Second">579м²</p>
+        <p class="A_TableText U_Third">1 | 0</p>
+        <p class="A_TableText U_Fourth">1 | 0</p>
+        <p class="A_TableText U_Fifth">III кв 2026 г.</p>
+        <p class="A_TableText U_Sixth">81 013 680 ₽</p>
+      </div>
+      <div class="W_TableRow">
+        <p class="A_TableText U_First">1</p>
+        <p class="A_TableText U_Second">579м²</p>
+        <p class="A_TableText U_Third">1 | 0</p>
+        <p class="A_TableText U_Fourth">1 | 0</p>
+        <p class="A_TableText U_Fifth">III кв 2026 г.</p>
+        <p class="A_TableText U_Sixth">81 013 680 ₽</p>
+      </div>
+      <div class="W_TableRow">
+        <p class="A_TableText U_First">1</p>
+        <p class="A_TableText U_Second">579м²</p>
+        <p class="A_TableText U_Third">1 | 0</p>
+        <p class="A_TableText U_Fourth">1 | 0</p>
+        <p class="A_TableText U_Fifth">III кв 2026 г.</p>
+        <p class="A_TableText U_Sixth">81 013 680 ₽</p>
+      </div>
+      <div class="W_TableRow">
+        <p class="A_TableText U_First">1</p>
+        <p class="A_TableText U_Second">579м²</p>
+        <p class="A_TableText U_Third">1 | 0</p>
+        <p class="A_TableText U_Fourth">1 | 0</p>
+        <p class="A_TableText U_Fifth">III кв 2026 г.</p>
+        <p class="A_TableText U_Sixth">81 013 680 ₽</p>
+      </div>
+      <div class="W_TableRow">
+        <p class="A_TableText U_First">1</p>
+        <p class="A_TableText U_Second">579м²</p>
+        <p class="A_TableText U_Third">1 | 0</p>
+        <p class="A_TableText U_Fourth">1 | 0</p>
+        <p class="A_TableText U_Fifth">III кв 2026 г.</p>
+        <p class="A_TableText U_Sixth">81 013 680 ₽</p>
+      </div>
+      <div class="W_TableRow">
+        <p class="A_TableText U_First">1</p>
+        <p class="A_TableText U_Second">579м²</p>
+        <p class="A_TableText U_Third">1 | 0</p>
+        <p class="A_TableText U_Fourth">1 | 0</p>
+        <p class="A_TableText U_Fifth">III кв 2026 г.</p>
+        <p class="A_TableText U_Sixth">81 013 680 ₽</p>
+      </div>
+
+    </section>
+    <section class="O_Halfs U_Color">
+      <div class="W_LeftHalf">
+        <h2 class="A_MediumTitle">Управляющая компания</h2>
+        <p class="A_SmallText">Профессиональная управляющая ĸомпания осуществляет техничесĸую эĸсплуатацию и содержание
+          ĸомплеĸса</p>
+      </div>
+      <div class="W_RightHalf">
+        <div class="M_Form">
+          <div class="W_Points">
+            <div class="A_Point">
+              Клининг
+            </div>
+            <div class="A_Point">
+              Техническая эксплуатация
+            </div>
+            <div class="A_Point">
+              Безопасность и контроль доступа
+            </div>
+            <div class="A_Point">
+              Уборка территории
+            </div>
+            <div class="A_Point">
+              Возможность заключения контракта на обслуживание помещений собственников / арендаторов
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="O_Halfs U_Reverse" id="RAOS_contacts">
+      <div class="W_LeftHalf U_Justify">
+        <div class="A_Contacts">
+          <a class="A_LinkText" href="">Написать нам</a>
+          <p class="A_SmallTextWithLink">
+            <a href="tel:+74956599033">+7 495 659 90 33</a>
+          </p>
+        </div>
+        <div class="C_Links">
+        </div>
+      </div>
+      <div class="W_RightHalf U_Justify">
+        <div class="M_Form">
+          <p class="A_MediumTitle">Оставьте заявку<br class="A_MediumTitle_br">на звонок менеджера</p>
+          <div class="W_FormInputs">
+            <input class="A_FormInput" type="text" placeholder="Имя">
+            <input class="A_FormInput" type="text" placeholder="Телефон">
+            <input class="A_FormInput" type="text" placeholder="Электронная почта">
+            <div class="W_CheckboxLink">
+              <div class="A_Checkbox"></div>
+              <p class="A_TextWithLink">Соглашаюсь на обработку <a target="_blank"
+                  href="https://parametr.space/privacy-policy">персональных данных</a></p>
+            </div>
+          </div>
+          <div class="A_Button">
+            Отправить
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="O_Footer">
+      <div class="W_FooterHalfs">
+        <div class="M_FooterPoints">
+          <img class="A_Logo U_Footer"
+            src="https://optim.tildacdn.com/tild6633-3063-4530-b063-663534353565/-/format/webp/RAOS_logo.png" alt="">
+        </div>
+        <div class="M_FooterPoints">
+          <a class="A_FooterLink" href="#RAOS_map">Расположение Промпарка</a>
+          <a class="A_FooterLink" href="#RAOS_features">Характеристики обьекта</a>
+          <a class="A_FooterLink" href="#RAOS_table">Доступные площади класса А</a>
+        </div>
+      </div>
+      <div class="W_FooterHalfs">
+        <div class="M_FooterPoints">
+          <p class="A_FooterText">ООО «ПИК-Коммерческая недвижимость», зарегистрированное по адресу 123242, Россия, г. Москва, вн.тер.г. Муниципальный округ Пресненский, Баррикадная ул., д. 19, стр. 1, Помещ. II, часть ком. 10, ОГРН: 1227700702888</p>
+          <a class="A_FooterLink" href="https://parametr.space/privacy-policy">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script type="text/javascript">
+    // Функция ymaps.ready() будет вызвана, когда
+    // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+    ymaps.ready(init);
+    function init(){
+        // Создание карты.
+        var myMap = new ymaps.Map("map", {
+            // Координаты центра карты.
+            // Порядок по умолчанию: «широта, долгота».
+            // Чтобы не определять координаты центра карты вручную,
+            // воспользуйтесь инструментом Определение координат.
+            center: [55.76, 37.64],
+            // Уровень масштабирования. Допустимые значения:
+            // от 0 (весь мир) до 19.
+            zoom: 7
+        });
+    }
+</script>
+  <script type="text/javascript">
+      // custom form and custom popup
+      {
+          const getUtms = () => {
+              const utms = {};
+              const keys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
+              const urlParams = new URLSearchParams(window.location.search);
+
+              urlParams.forEach((value, key) => {
+                  if (keys.includes(key)) {
+                      utms[key] = value;
+                  }
+              });
+
+              // the condition is met if the URL contains utms
+              if (Object.keys(utms).length > 0) {
+                  return {
+                      utms,
+                      from_url: true
+                  };
+              }
+
+              const now = new Date();
+              const utmsData = localStorage.getItem('utms');
+              const savedUtms = utmsData ? JSON.parse(utmsData) : null;
+
+              if (savedUtms && savedUtms.expiry > now.getTime()) {
+                  Object.keys(savedUtms).forEach((key) => {
+                      if (keys.includes(key)) {
+                          utms[key] = savedUtms[key];
+                      }
+                  });
+
+                  return {
+                      utms: utms,
+                      from_url: false
+                  };
+              }
+
+              return null;
+          };
+
+          const setUtms = (form) => {
+              const utmsData = getUtms();
+
+              if (utmsData) {
+                  const utms = utmsData.utms;
+
+                  if (utmsData.from_url) {
+                      const expiryDate = new Date();
+                      expiryDate.setMonth(expiryDate.getMonth() + 1); // expiry 30 days
+
+                      const obj = {
+                          expiry: expiryDate.getTime(),
+                          ...utms
+                      };
+
+                      localStorage.setItem('utms', JSON.stringify(obj));
+                  }
+
+                  Object.keys(utms).forEach((key) => {
+                      const value = utms[key];
+                      const utmField = form.querySelector(`input[name="${key}"]`);
+
+                      if (utmField) {
+                          utmField.setAttribute('value', value);
+                      }
+                  })
+              }
+          };
+
+          const getYandexClientId = () => {
+              const getClientId = () => {
+                  if (window.Ya && (window.Ya.Metrika2 || window.Ya.Metrika)) {
+                      let clientId = '0';
+                      let counterId = 0;
+                      const yandexMetrika = window.Ya.Metrika2 || window.Ya.Metrika;
+                      const counters = yandexMetrika.counters();
+      
+                      if (Array.isArray(counters) && counters.length >= 1) {
+                          counterId = counters[0].id || 0;
+                      }
+      
+                      if (window[`yaCounter${counterId}`]) {
+                          clientId = window[`yaCounter${counterId}`].getClientID() || '0';
+                      }
+      
+                      return {
+                          clientId: clientId
+                      };
+                  }
+      
+                  return null;
+              };
+      
+              return new Promise((resolve) => {
+                  // stop loop executed infinity times
+                  const timerId = setTimeout(() => {
+                      resolve({
+                          clientId: '0'
+                      });
+                  }, 30000);
+      
+                  const reCall = () => {
+                      const result = getClientId();
+      
+                      if (result === null) {
+                          setTimeout(() => {
+                              reCall();
+                          }, 400);
+                      } else {
+                          clearTimeout(timerId);
+      
+                          resolve({
+                              clientId: result.clientId,
+                          });
+                      }
+                  };
+      
+                  reCall();
+              });
+          };
+          
+          const setClientId = (form) => {
+              getYandexClientId().then((res) => {
+                  const clientId = res.clientId;
+                  const clientIdField = form.querySelector(`input[name="cid"]`);
+                  
+                  if (clientIdField) {
+                      clientIdField.setAttribute('value', clientId);
+                  }
+              });
+          };
+
+          const renderPopup = (text) => {
+              const template = `
+                  <div class="custom-success-popup js-custom-success-popup">
+                      <div class="custom-success-popup__content">
+                          <div class="custom-success-popup__close js-custom-success-popup__close"></div>
+                          <div class="custom-success-popup__title">Обратная связь</div>
+                          <div class="custom-success-popup__text">${text}</div>
+                      </div>
+                  </div>
+              `;
+
+              const scrollbarWidth = `${window.innerWidth - document.documentElement.clientWidth}px`;
+
+              document.body.insertAdjacentHTML('beforeend', template);
+              document.body.style.overflow = 'hidden';
+              document.body.style.paddingRight = scrollbarWidth;
+          };
+
+          const removePopup = () => {
+              const popup = document.querySelector('.js-custom-success-popup');
+
+              if (popup) {
+                  popup.remove();
+                  document.body.style.overflow = '';
+                  document.body.style.paddingRight = '';
+              }
+          };
+
+          const customForms = document.querySelectorAll('.js-custom-form__form');
+
+          Array.from(customForms).forEach((form) => {
+              const inputs = form.querySelectorAll('.js-custom-form__input');
+              const errors = form.querySelectorAll('.js-custom-form__error');
+              const submitBtn = form.querySelector('.js-custom-form__btn');
+
+              if (form && inputs.length > 0 && errors.length > 0 && submitBtn) {
+                  const clearErrors = () => {
+                      errors.forEach((error) => {
+                          const parent  = error.closest('.js-custom-form__field');
+                          parent.classList.remove('invalid');
+                          error.textContent = '';
+                      });
+                  };
+
+                  const addErrorToField = (field) => {
+                      const parent = field.closest('.js-custom-form__field');
+                      const error = parent.querySelector('.js-custom-form__error');
+                      parent.classList.add('invalid');
+                      
+                      let errorText = '';
+
+                      if (field.value === '' || (field.type === 'checkbox' && field.checked === false)) {
+                          errorText = field.getAttribute('data-error-required');
+                      } else {
+                          errorText = field.getAttribute('data-error-pattern');
+                      }
+
+                      error.textContent = errorText;
+                  };
+                  
+                  setUtms(form);
+                  setClientId(form);
+
+                  form.addEventListener('submit', async (e) => {
+                      e.preventDefault();
+                      
+                      if (form.checkValidity()) {
+                          clearErrors(); // удаляем старые ошибки
+                          submitBtn.classList.add('custom-form__btn_sending');
+                          submitBtn.setAttribute('disabled', true);
+
+                          const formData = new FormData(event.target);
+                          
+                          try {
+                              const response = await fetch('https://tglk.ru/in/5mO7kSZOZhLyeLJ4', {
+                                  method: 'POST',
+                                  body: formData
+                              });
+                              
+                              const result = await response.json();
+                              
+                              // if success
+                              if (result?.status === true) {
+                                  form.reset();
+                                  submitBtn.classList.remove('custom-form__btn_sending');
+                                  submitBtn.removeAttribute('disabled');
+                                  renderPopup('Спасибо! Ваш запрос отправлен. <br> Мы ответим Вам в ближайшее время.');
+                                  // ym(95635815, 'reachGoal', 'mn_forms_sent');
+                                  // ym(95647950, 'reachGoal', 'mn_all_sites_form_sent');
+                              } else {
+                                  submitBtn.classList.remove('custom-form__btn_sending');
+                                  submitBtn.removeAttribute('disabled');
+                                  renderPopup('Не удалось отправить форму проверьте правильность вода и попытайтесь еще раз');
+                              }
+                          } catch(error) {
+                              console.error(error);
+                              submitBtn.classList.remove('custom-form__btn_sending');
+                              submitBtn.removeAttribute('disabled');
+                              renderPopup('Не удалось отправить форму повторите пожалуйста попытку еще раз');
+                          }
+                      } else {
+                          clearErrors(); // удаляем старые ошибки
+
+                          Array.from(inputs).forEach((input) => {
+                              if (!input.validity.valid) {
+                                  addErrorToField(input); // добавляем информацию об ошибке к полю
+                              }
+                          });
+                      }
+                  });
+              }
+          });
+      
+          // closing of popup
+          document.addEventListener('click', (e) => {
+              const target = e.target;
+              const closePopupByClassNames = ['js-custom-success-popup', 'js-custom-success-popup__close'];
+
+              if (closePopupByClassNames.some(className => target.classList.contains(className))) {
+                  removePopup();
+              }
+          });
+      }
+  </script>
+</body>
+
+</html>
