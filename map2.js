@@ -6669,7 +6669,7 @@ let map = null;
             // Create custom marker
             const markerElement = document.createElement('div');
             markerElement.className = 'custom-marker';
-            markerElement.innerHTML = '<img id="MapMarker" style="height:78px; width: 93px;" src="https://optim.tildacdn.com/tild3537-3765-4534-a665-323632316534/-/resize/190x/-/format/webp/A_MapMarker.png" alt="">';
+            markerElement.innerHTML = '<img id="MapMarker" style="height:50px; width: 162px;" src="https://optim.tildacdn.com/tild6334-6163-4961-a531-393933626234/-/format/webp/A_MapMarkerLogo.png" alt="">';
             
             // Create container for marker elements
             const markerContainer = document.createElement('div');
@@ -6691,7 +6691,7 @@ let map = null;
                 markerContainer
             ));
             let MapMarkerImage = document.querySelector('#MapMarker')
-            MapMarkerImage.style.transform = 'translateY(-64px)';
+            MapMarkerImage.style.transform = 'translate(-50px, -81px)';
         }
 })
 
