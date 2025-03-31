@@ -6669,7 +6669,7 @@ let map = null;
             // Create custom marker
             const markerElement = document.createElement('div');
             markerElement.className = 'custom-marker';
-            markerElement.innerHTML = '<img id="MapMarker" style="height:63.97px; width: 54px;" src="https://optim.tildacdn.com/tild3737-6465-4262-b330-626439616235/-/resize/432x/-/format/webp/MapLogo.png" alt="">';
+            markerElement.innerHTML = '<img id="MapMarker" style="height:78px; width: 93px;" src="https://optim.tildacdn.com/tild3537-3765-4534-a665-323632316534/-/resize/190x/-/format/webp/A_MapMarker.png" alt="">';
             
             // Create container for marker elements
             const markerContainer = document.createElement('div');
