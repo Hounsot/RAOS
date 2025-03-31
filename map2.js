@@ -6691,7 +6691,7 @@ let map = null;
                 markerContainer
             ));
             let MapMarkerImage = document.querySelector('#MapMarker')
-            MapMarkerImage.style.transform = 'translate(-50px, -81px)';
+            MapMarkerImage.style.transform = 'translate(-81px, -50px)';
         }
 })
 
